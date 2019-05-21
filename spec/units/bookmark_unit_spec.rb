@@ -1,13 +1,10 @@
 require 'bookmark'
 
 describe Bookmark do
-  
-  it 'responds to .all method' do
-    expect(Bookmark).to respond_to(:all)
-  end
 
-  it 'contains an array of URLs' do
-    expect(Bookmark.all).to include("http://google.co.uk")
+  it 'contains a list of bookmarks' do
+    bookmarks = Bookmark.all
+    expect(bookmarks).to include("http://www.google.com")
   end
 
 end
