@@ -11,14 +11,16 @@
 # a separate helper file that requires the additional dependencies and performs
 # the additional setup, and require it from the spec files that actually need
 # it.
-#
+# 
 
 require 'capybara/rspec'
 require 'simplecov'
 require 'simplecov-console'
+require_relative './setup_test_database'
 
 ENV['RACK_ENV'] = 'test'
 require File.join(File.dirname(__FILE__), '../app', 'app.rb')
+
 
 require 'capybara'
 require 'rspec'
@@ -34,6 +36,10 @@ Capybara.app = BookmarkManager
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+
+  config.before(:each) do
+    setup_test_database
+  end
   # assertions if you prefer.
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`

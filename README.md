@@ -1,9 +1,4 @@
 # BOOKMARK MANAGER
-```
-As a User,
-So that I can see what websites I have visited
-I want to see a list of bookmarks.
-```
 
 Objects:
 * Bookmark
@@ -15,10 +10,18 @@ Objects:
 	* Update
 	* Comment
 
+User story 1
 ```
 As a time-pressed user
 So that I can save a website
 I would like to add the site's address and title to bookmark manager.
+```
+
+User story 2
+``` 
+As a time-pressed user
+So that I can have a list of bookmarks
+I want to be able to add bookmarks
 ```
 
 ## INSTRUCTIONS FOR THE USE OF SQL:
