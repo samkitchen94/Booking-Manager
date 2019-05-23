@@ -18,11 +18,14 @@ I would like to add the site's address and title to bookmark manager.
 ```
 
 User story 2
-``` 
+```
 As a time-pressed user
 So that I can have a list of bookmarks
 I want to be able to add bookmarks
 ```
+
+## Domain model
+![domain_model](./README images/domain_model.png)
 
 ## INSTRUCTIONS FOR THE USE OF SQL:
 
@@ -36,7 +39,7 @@ $ psql
 ```
 CREATE DATABASE bookmark_manager
 ```
-3. Connect to the database using the pqsl command 
+3. Connect to the database using the pqsl command
 
 ```
 \c bookmark_manager
@@ -46,6 +49,9 @@ CREATE DATABASE bookmark_manager
 
 ```
 CREATE TABLE bookmarks(id SERIAL PRIMARY KEY, url VARCHAR(60));
+```
+```
+ALTER TABLE bookmarks ADD COLUMN title VARCHAR(60);
 ```
 ### To run the Bookmark Manager app:
 
@@ -61,7 +67,7 @@ $ shotgun
 $ rspec
 ```
 
-### To run linting:	
+### To run linting:
 
 ```
 rubocop
