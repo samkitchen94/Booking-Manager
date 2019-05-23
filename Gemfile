@@ -10,5 +10,6 @@ gem 'shotgun'
 gem 'simplecov'
 gem 'simplecov-console'
 gem 'sinatra'
+gem 'sinatra-flash'
 
 # gem "rails"

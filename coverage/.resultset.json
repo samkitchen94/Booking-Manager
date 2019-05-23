@@ -30,23 +30,41 @@
         1,
         1,
         1,
+        1,
         null,
         null
       ],
       "/Users/kiri/Documents/GitHub/bookmark_manager/spec/units/bookmark_unit_spec.rb": [
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         1,
         null,
         1,
         1,
         1,
+        1,
+        1,
         null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
         1,
         null,
         1,
         null,
-        null,
+        1,
         1,
         1,
         1,
@@ -56,8 +74,17 @@
         null,
         null,
         null
+      ],
+      "/Users/kiri/Documents/GitHub/bookmark_manager/spec/database_helpers.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1558539371
+    "timestamp": 1558558153
   }
 }

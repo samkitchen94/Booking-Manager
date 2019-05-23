@@ -1,14 +1,16 @@
 require 'sinatra/base'
+require 'sinatra/flash'
 require_relative '../lib/bookmark'
 
-class BookmarkManager < Sinatra::Base 
+class BookmarkManager < Sinatra::Base
 
   get '/' do
     erb(:index)
   end
 
   get '/bookmarks' do
-    @bookmark = Bookmark.all
+    @bookmarks = Bookmark.all
+
     erb(:bookmarks)
   end
   
@@ -17,7 +19,7 @@ class BookmarkManager < Sinatra::Base
   end
 
   post '/bookmarks' do
-  	Bookmark.create(url: params['url'])
+  	Bookmark.create(url: params[:url], title: params[:title])
     redirect '/bookmarks'
   end
 
